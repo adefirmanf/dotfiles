@@ -1,0 +1,56 @@
+[ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+
+# Export user/bin 
+export PATH="/usr/local/bin:$PATH"
+
+# Export homebrew config
+export PATH="/opt/homebrew/bin:$PATH"
+
+# Export nvim config (assuming nvim is in ~/nvim/bin)
+export PATH="$HOME/nvim/bin:$PATH"
+
+
+# Export nodejs bin directory under asdf 
+# Export AICOMMITS
+# /Users/xsi3/.asdf/installs/nodejs/23.9.0/bin/aicommits
+export PATH="$HOME/.asdf/installs/nodejs/23.9.0/bin/aicommit:$PATH"
+
+# Z (Jumping around to another folder without cd ../ // // )
+. ~/z/z.sh
+
+if ! eval "$(oh-my-posh init zsh --config 'https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/1_shell.omp.json')" 2>/dev/null; then
+    echo "Warning: Failed to initialize oh-my-posh"
+fi
+
+alias ls="eza -a --icons --colour -l --no-permissions --no-user --no-time"
+alias vim=nvim
+alias j=z
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/xsi3/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/xsi3/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/xsi3/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/xsi3/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Disable the warning python 
+export PYTHONWARNINGS="ignore::UserWarning"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ASDF 
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+export PATH="/opt/homebrew/opt/openssl@3.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/openssl@3.0/bin:$PATH"
+
+export XDG_CONFIG_HOME=$HOME/.config
+
+alias q=exit
+alias cfg=chezmoi

@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 18b97cde7b22f79526214a603f6c4b91ce9bc196 adefirmanf <syskeys32@gmail.com> 1740235312 +0700	commit (initial): feat(nvim): add nvim config
+18b97cde7b22f79526214a603f6c4b91ce9bc196 b0834e0dc13f9d32c59faaa593617d5e0a67a6e3 adefirmanf <syskeys32@gmail.com> 1740474920 +0700	commit: feat(nvim): update nvim config
+b0834e0dc13f9d32c59faaa593617d5e0a67a6e3 2d043b13d4aaa5377cfab5fca66667d57d7aa536 adefirmanf <syskeys32@gmail.com> 1740867289 +0700	commit: feat(nvim): update plugins and add new plugins
+2d043b13d4aaa5377cfab5fca66667d57d7aa536 bc1065bac6e339b574964c237ec4732355dcb1bb adefirmanf <syskeys32@gmail.com> 1741105969 +0700	commit: feat(nvim): add new command for copy relative path and update keybindings for accepting suggestion from AI
+bc1065bac6e339b574964c237ec4732355dcb1bb affd53ee13cca512f6aaa13f6a9b2ddec574bfeb adefirmanf <syskeys32@gmail.com> 1743239042 +0700	commit: feat(nvim): i don't know what the overall updates
+affd53ee13cca512f6aaa13f6a9b2ddec574bfeb fbdd0ffce7a96ad9daccf2df1e77d2c4093d8ad7 adefirmanf <syskeys32@gmail.com> 1746365585 +0700	commit: feat(nvim): add everything
+fbdd0ffce7a96ad9daccf2df1e77d2c4093d8ad7 cad44a5b65cd1e7da32d17b3e58b219608fb3ef2 adefirmanf <syskeys32@gmail.com> 1746557233 +0700	commit: feat: Add configuration for competitest.nvim plugin
